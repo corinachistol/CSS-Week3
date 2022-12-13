@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PURE CSS Vertical Carousel</title>
+  <style>
+    body{
+      background-color: #333;
+    }
+
+    .carousel{
+      /* border: 1px solid white; */
+
+      display: inline-block;
+      text-align: center;
+    }
+
+    .carousel .slide{
+      /* border: 1px solid red; */
+      padding-bottom: 4px;
+      position: relative
+    }
+
+    .carousel .slide:target{
+      z-index: 1;
+    }
+
+    .carousel .slide:target img{
+      opacity: 1;
+      transition: .5s;
+    }
+
+
+    .carousel .slide:nth-child(2),
+    .carousel .slide:nth-child(3){
+      margin-top: -521px;
+    }
+   
+
+    .carousel a{
+      color: white;
+      text-decoration: none;
+      font-size: 300%;
+    }
+
+    /* .carousel a:first-child{
+      margin-bottom:3px;
+      display: inline-block;
+    } */
+
+    .carousel img{
+      display: block;
+      margin-top:4px;
+      margin-bottom: 4px;
+      opacity: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="carousel">
+  <div id="s-1" class="slide">
+    <a href="#s-3">▲</a>      
+    <img src="images/222-300x400.jpg" alt="">
+    <a href="#s-2">▼</a>
+  </div>
+  <div id="s-2" class="slide">
+    <a href="#s-1">▲</a>
+    <img src="images/301-300x400.jpg" alt="">
+    <a href="#s-3">▼</a>    
+  </div>
+  <div id="s-3" class="slide">
+    <a href="#s-2">▲</a>
+    <img src="images/558-300x400.jpg" alt="">
+    <a href="#s-1">▼</a>
+  </div>
+</div>
+
+
+  
+  
+</body>
+</html>
