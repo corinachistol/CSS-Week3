@@ -82,11 +82,12 @@ overflow-x: scroll;
 
   overflow: hidden;
 }
-.stories .slide #avatar{
+.stories .slide #avatar img{
   display: inline-block;
-  width: 110%;
-  margin-left: -9px;
-  margin-top: -18px;
+  width: 120%;
+  margin-left: -12px;
+  margin-top: -30px;
+  
 
 }
 
@@ -110,8 +111,9 @@ overflow-x: scroll;
   font-weight: bold;
   font-size: 90%;
   text-align: center;
+  margin-top: 17px;
   /* background-color: #234; */
-  margin-top: 10px;
+  
 
  
 }
@@ -133,6 +135,6 @@ overflow-x: scroll;
   /* opacity: 0.5; */
 }
 
-/* ::-webkit-scrollbar{
+::-webkit-scrollbar{
   height: 0;
-} */
+}
