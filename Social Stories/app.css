@@ -1,0 +1,138 @@
+/*common styles*/
+html{
+  height: 100%;
+}
+body{
+  background-color: #345;
+  margin: 0;
+  /* color: white; */
+  height: 100%;
+}
+h1{
+  color: white;
+  text-align: center;
+}
+
+/*stories component styles*/
+.stories{
+/* border: 1px dotted white; */
+height: 33.3%;
+
+/*this property-inline*/
+white-space: nowrap;
+overflow-x: scroll;
+
+
+
+}
+
+.stories .slide{
+  width: 23%;
+  height: 100%;
+  margin-right: 1%;
+
+  background-color: #fff;
+
+  display: inline-block;
+  white-space: nowrap;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  
+  vertical-align: top;
+  text-align: center;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+
+}
+/* .stories .slide:nth-child(1){
+  background-image: url(avatars/avatar_5.png);
+  background-size: auto 60%;
+  background-position: center top;
+  margin-top: -9px;
+  
+} */
+
+.stories .slide:nth-child(1){
+  background-color: rgb(219, 212, 212);
+}
+.stories .slide:nth-child(2){
+  background-image: url(images/1040-300x600.jpg);
+}
+.stories .slide:nth-child(3){
+  background-image: url(images/13-300x600.jpg);
+}
+.stories .slide:nth-child(4){
+  background-image: url(images/339-300x600.jpg);
+}
+.stories .slide:nth-child(5){
+  background-image: url(images/115-300x600.jpg);
+}
+
+.stories .slide .avatar{
+  display: inline-block;
+  border: 3px solid rgb(9, 9, 66);
+  width: 70%;
+  height: 45%;
+  margin-top: -1%;
+  border-radius: 100%;
+  box-shadow: 0 0 5px 3px #234;
+
+  overflow: hidden;
+}
+.stories .slide #avatar{
+  display: inline-block;
+  width: 110%;
+  margin-left: -9px;
+  margin-top: -18px;
+
+}
+
+.stories .slide #avatar div{
+  background-color: blue;
+  color: white;
+  border: 3px solid white;
+  border-radius: 100%;
+  box-shadow: 0 0 5px 3px white;
+  width: 20%;
+  margin: auto;
+  margin-top: -5px;
+  font-weight: bold;
+  font-size: 175%;
+
+}
+
+.stories .slide #avatar p{
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 90%;
+  text-align: center;
+  /* background-color: #234; */
+  margin-top: 10px;
+
+ 
+}
+
+.stories .slide img{
+  width: 116%;
+  margin-top: -15%;
+  margin-left: -6%;
+   
+
+}
+
+.stories .label{
+  background-color: #1137;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1em;
+  margin-top: 50%;
+  /* opacity: 0.5; */
+}
+
+/* ::-webkit-scrollbar{
+  height: 0;
+} */
