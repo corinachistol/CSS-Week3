@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TOGGLER | CSS INHERITANCES & VARIABLES</title>
+  <style>
+    .toggler{
+      font-family: Arial, Helvetica, sans-serif;
+      cursor: pointer;
+      user-select: none;  
+      vertical-align: middle;
+
+      --color-off-1:#888;
+      --color-off-2:#555;
+
+      --color-on-1:rgba(62, 197, 62, 0.808);
+      --color-on-2:darkgreen;
+
+    }
+
+    .toggler div span{
+      /*inherit*/
+      background-color: var(--color-off-2);
+      color: transparent;
+
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      margin-left: 1.5em;
+      border-radius: 100%;
+      margin-top: -1.25em;
+
+      transition: .5s;
+      box-shadow: 0 0 1px 2px var(--color-off-1) ;
+      
+      
+
+    }
+
+    .toggler input{
+      display: none;
+    }
+
+    .toggler span{
+      display: inline-block;
+      vertical-align: inherit;
+      color: var(--color-off-1);
+      transition: .5s;
+      
+    }
+    .toggler div{
+      /*here inherit*/
+      background-color: var(--color-off-1);
+      display: inline-block;
+      height: 2px;
+      vertical-align: inherit;
+      transition: .5s;
+    }
+
+    .toggler input:checked + div span{
+      margin-left: 0;
+      margin-right: 1.5em;
+
+      background-color: var(--color-on-2);
+    }
+    .toggler input:checked + div{
+      background-color:  var(--color-on-1);
+    }
+
+    .toggler input:checked + div+ span{
+      color: var(--color-on-2);
+    }
+  </style>
+</head>
+<body>
+
+
+  <label class="toggler">
+    <!-- childdren <input> <span> <anonymous text> -->
+    <input type="checkbox"> 
+      <div> 
+        <span>+</span>
+      </div> 
+      <span> Dark Theme</span>
+  </label>
+</body>
+</html>
