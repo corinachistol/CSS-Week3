@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>A CSS button with TESt & ICON</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    /* .btn-wrapper{
+      border: 1px solid black;
+      height: 51px;
+      width: 210px;
+    } */
+
+    .btn{
+      display: inline-block;
+      width: 208px;
+      height: 52px;
+
+      border-radius: 26px;
+
+      text-decoration: none;
+      text-transform: uppercase;
+
+      font-family: Arial;
+      font-weight: bold;
+      font-size: 18px;
+
+      line-height: 52px;
+
+      box-shadow: 0 2px 3px 0px #55555557 ;
+      
+
+    }
+
+    .btn-download{
+      background-color: #91c53f;
+      color: white;
+    }
+    .btn-download:hover{
+      background-color:#3faf4b ;
+    }
+    .btn-download:hover i{
+      color:#3faf4b ;
+    }
+
+    .btn-upload{
+      display: inherit;
+      background-color: #ec1b30;
+      color: white;
+      margin-top: 17px;
+    }
+    .btn-upload:hover{
+      background-color:#bf1527;
+    }
+    .btn-upload:hover i{
+      color:#bf1527;
+    }
+
+    .btn-cloud{
+      transform: translateY(-121px) translateX(260px);
+      background-color: #13b1e0;
+      color: white;
+    }
+    .btn-cloud:hover{
+      background-color: #2c81b8;
+    }
+    .btn-cloud:hover i{
+      color: #2c81b8;
+    }
+    .btn-settings{
+      background-color: #81328e;
+      color: white;
+      transform: translateY(-52px) translateX(50px);
+    }
+    .btn-settings:hover{
+      background-color: #b83ccd;
+    }
+    .btn-settings:hover i{
+      color: #b83ccd;
+    }
+
+    .btn i{
+      width: 52px;
+      height: inherit;
+      
+      /* transform: translateY(-16px); */
+      border-radius: 25px;
+
+      text-align: center;
+      line-height: inherit;
+
+      font-size: 30px;
+
+      box-shadow: inherit ;
+    }
+
+    .btn-download i{
+      background-color: white;
+      color: #91c53f;
+    }
+
+    .btn-upload i{
+      background-color: white;
+      color: #ec1b30;
+    }
+    .btn-cloud i{
+      background-color: white ;
+      color:#13b1e0;
+    }
+    .btn-settings i{
+      background-color:white;
+      color: #81328e;
+
+    }
+
+    .btn span{
+      /* daca pun inherit aici , sare "upload" */
+      display: inline-block;   
+      transform: translateY(-5px);
+      width: 134px;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>A CSS button with TESt & ICON</h1>
+
+  <div class="btn-wrapper">
+
+    <!-- 
+      button,a
+     -->
+     <!--BEM: 
+          btn-common button styles
+          btn-download-specific button styles -->
+
+     <a class="btn btn-download" href="#download">
+      <i class="fa-solid fa-cloud-arrow-down"></i>
+      <span> Download</span>
+    </a>
+
+     <a class="btn btn-upload" href="#upload">
+      <i class="fa-solid fa-cloud-arrow-up"></i>
+      <span>Upload</span>
+    </a>
+
+     <a class="btn btn-cloud" href="#cloud">
+      <i class="fa-solid fa-cloud"></i>
+      <span>Cloud</span>
+    </a>
+     <a class="btn btn-settings" href="#cloud">
+      <i class="fa-solid fa-cloud"></i>
+      <span>Settings</span>
+    </a>
+  </div>
+
+</body>
+</html>
