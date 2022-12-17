@@ -1,0 +1,48 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+/* LAYOUT */
+nav ul{
+  /* flex-container */
+ display: flex;
+ background-color: #ddd;
+
+}
+
+nav li{
+  /*flex items  */
+  padding: 1em;
+  color: black;
+}
+
+nav a{ 
+ color: inherit;
+}
+
+/* multiple selectors */
+/* hover sync */
+/* nav li:hover{
+  background-color: black;
+  color: white;
+}
+
+nav li:hover a{
+  color: white;
+} */
+
+/* inheritance */
+nav li:hover{
+  background-color: black;
+  color: white;
+}
